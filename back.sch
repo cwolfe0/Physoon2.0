@@ -3354,7 +3354,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C1" gate="G$1" x="-162.56" y="147.32"/>
 <instance part="C2" gate="G$1" x="-175.26" y="147.32"/>
 <instance part="C3" gate="G$1" x="-180.34" y="175.26"/>
-<instance part="C5" gate="G$1" x="-93.98" y="170.18"/>
+<instance part="C5" gate="G$1" x="-93.98" y="167.64"/>
 <instance part="C6" gate="G$1" x="-139.7" y="200.66" rot="R90"/>
 <instance part="GND1" gate="1" x="-175.26" y="137.16"/>
 <instance part="GND2" gate="1" x="-162.56" y="137.16"/>
@@ -3445,6 +3445,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-104.14" y1="175.26" x2="-93.98" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-93.98" y1="175.26" x2="-83.82" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="175.26" x2="-93.98" y2="172.72" width="0.1524" layer="91"/>
 <junction x="-93.98" y="175.26"/>
 <label x="-88.9" y="175.26" size="1.778" layer="95"/>
 </segment>
@@ -3572,7 +3573,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="-93.98" y1="167.64" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="165.1" x2="-93.98" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
