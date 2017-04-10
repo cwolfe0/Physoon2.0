@@ -3335,7 +3335,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP4" library="SparkFun" deviceset="M06" device="POLAR"/>
 <part name="U$12" library="SHC" deviceset="CKN10160-ND" device=""/>
-<part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3407,7 +3406,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="GND31" gate="1" x="119.38" y="172.72" rot="R90"/>
 <instance part="JP4" gate="G$1" x="55.88" y="144.78"/>
 <instance part="U$12" gate="G$1" x="-23.368" y="-30.48" rot="MR0"/>
-<instance part="GND13" gate="1" x="-7.62" y="180.34"/>
 </instances>
 <busses>
 </busses>
@@ -3714,16 +3712,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP4" gate="G$1" pin="5"/>
 <wire x1="60.96" y1="149.86" x2="71.12" y2="149.86" width="0.1524" layer="91"/>
 <label x="66.04" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="M1" gate="G$1" pin="BODYGND1"/>
-<wire x1="-10.16" y1="193.04" x2="-7.62" y2="193.04" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="193.04" x2="-7.62" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="M1" gate="G$1" pin="BODYGND2"/>
-<wire x1="-7.62" y1="190.5" x2="-7.62" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="190.5" x2="-7.62" y2="190.5" width="0.1524" layer="91"/>
-<junction x="-7.62" y="190.5"/>
-<pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
