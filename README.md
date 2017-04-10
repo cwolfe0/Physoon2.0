@@ -15,3 +15,5 @@ The board uses a:
 - Thermistor
 - ON-MOM Switch
 - PDI Interface
+
+![Board Image](https://i.imgur.com/vq2qlRI.png "Board Image")
