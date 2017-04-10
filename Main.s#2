@@ -2215,58 +2215,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="Physoon">
-<packages>
-<package name="SOT-223">
-<smd name="2" x="0" y="1.1" dx="1.2" dy="2.2" layer="1"/>
-<smd name="3" x="2.3" y="1.1" dx="1.2" dy="2.2" layer="1"/>
-<smd name="1" x="-2.3" y="1.1" dx="1.2" dy="2.2" layer="1"/>
-<smd name="4" x="0" y="7.3" dx="3.5" dy="2.2" layer="1"/>
-<wire x1="-3.4" y1="2.35" x2="3.4" y2="2.35" width="0.127" layer="51"/>
-<wire x1="3.4" y1="2.35" x2="3.4" y2="6.05" width="0.127" layer="51"/>
-<wire x1="3.4" y1="6.05" x2="-3.4" y2="6.05" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="6.05" x2="-3.4" y2="2.35" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="6.05" x2="-3.4" y2="2.35" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="6.05" x2="3.4" y2="2.35" width="0.2032" layer="21"/>
-<text x="-3" y="9" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-2" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="AZ1117E">
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="INPUT" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="OUTPUT" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="VOUT" x="-15.24" y="0" length="middle"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="AZ1117EH-3.3">
-<gates>
-<gate name="G$1" symbol="AZ1117E" x="0" y="0"/>
-</gates>
-<devices>
-<device name="3.3" package="SOT-223">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="INPUT" pad="3"/>
-<connect gate="G$1" pin="OUTPUT" pad="2"/>
-<connect gate="G$1" pin="VOUT" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2327,7 +2275,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="JP3" library="SparkFun-Connectors" deviceset="M03" device="JST-PTH"/>
 <part name="GND23" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$10" library="Physoon" deviceset="AZ1117EH-3.3" device="3.3"/>
 </parts>
 <sheets>
 <sheet>
@@ -2386,7 +2333,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="JP3" gate="G$1" x="-10.16" y="73.66"/>
 <instance part="GND23" gate="1" x="2.54" y="66.04"/>
 <instance part="GND24" gate="1" x="-78.74" y="-29.21" rot="R270"/>
-<instance part="U$10" gate="G$1" x="71.12" y="185.42"/>
 </instances>
 <busses>
 </busses>
