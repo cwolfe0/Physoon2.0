@@ -16,4 +16,6 @@ The board uses a:
 - ON-MOM Switch
 - PDI Interface
 
+![Top Image](http://i.imgur.com/LrOOLHD.png "Top of Board")
+![Bottom Image](http://i.imgur.com/W7NVaVX.png "Bottom of Board")
 ![Board Image](https://i.imgur.com/UrV4KWR.png "Board Image")
