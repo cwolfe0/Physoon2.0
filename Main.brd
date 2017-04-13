@@ -15,7 +15,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -145,7 +145,7 @@
 <text x="6" y="21" size="1.27" layer="22" rot="MR0">18pF</text>
 <text x="11" y="6" size="1.27" layer="22" rot="MR0">GND</text>
 <text x="55.3" y="6" size="1.27" layer="22" rot="MR0">GND</text>
-<text x="135.7492" y="5.965" size="1.27" layer="22" rot="MR0">GND</text>
+<text x="92.7492" y="5.965" size="1.27" layer="22" rot="MR0">GND</text>
 <text x="51.3" y="6" size="1.27" layer="21">GND</text>
 <text x="94" y="45" size="1.27" layer="21">BATT</text>
 <text x="40" y="45" size="1.27" layer="21">BATT</text>
@@ -2879,6 +2879,7 @@
 <hole x="3" y="77.5" drill="2.2606"/>
 <hole x="50" y="40" drill="2"/>
 <text x="0" y="-0.127" size="0.0508" layer="20" font="vector">C:/Users/cw0063/Downloads/croc.bmp</text>
+<text x="7.3" y="6" size="1.27" layer="21">GND</text>
 </plain>
 <libraries>
 <library name="xmega-a4">
