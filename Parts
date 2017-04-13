@@ -1,0 +1,44 @@
+Partlist
+
+Exported from Main.sch at 4/10/17 6:37 PM
+
+EAGLE Version 8.1.0 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value                      Device                     Package                 Library             Sheet
+
+C1       22pF                       CAP0805                    0805                    SparkFun            1
+C2       22pF                       CAP0805                    0805                    SparkFun            1
+C3       22pF                       CAP0805                    0805                    SparkFun            1
+C4       1uF                        CAP0603-CAP                0603-CAP                SparkFun            1
+C5       22pF                       CAP0805                    0805                    SparkFun            1
+C6       18pF                       CAP0805                    0805                    SparkFun            1
+C7       100nF                      CAP0805                    0805                    SparkFun            1
+C8       1uF                        CAP0603-CAP                0603-CAP                SparkFun            1
+C9       .47uF                      CAP0603-CAP                0603-CAP                SparkFun            1
+C10      22uF                       CAP0603-CAP                0603-CAP                SparkFun            1
+IC1                                 AT-XMEGA-XXA4-AU           QFP80P1200X1200X120-44N xmega-a4            1
+IC2      74AHC1G125DBV              74AHC1G125DBV              SOT23-5                 74xx-little-us      1
+IC3      74AHC1G125DBV              74AHC1G125DBV              SOT23-5                 74xx-little-us      1
+JP1                                 M03JST-PTH                 JST-3-PTH               SparkFun-Connectors 1
+JP2                                 M03JST-PTH                 JST-3-PTH               SparkFun-Connectors 1
+JP3                                 M03JST-PTH                 JST-3-PTH               SparkFun-Connectors 1
+JP4                                 M06POLAR                   MOLEX-1X6               SparkFun            1
+L3       FB_0402                    FB_0402                    L0402                   rc-master-smd       1
+L4       FB_0402                    FB_0402                    L0402                   rc-master-smd       1
+M1       HX1                        HX1                        HX1                     trackuino           1
+MPU                                 M04                        04P                     con-amp-quick       1
+U$1      MS5611QFN                  MS5611QFN                  MS5611-01BA01           SHC                 1
+U$2      M10382-A1                  M10382-A1                  M10382-A1               SHC                 1
+U$3      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$4      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$5      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$6      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$7      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$8      123_BATTERY_HOLDERCR-123-A 123_BATTERY_HOLDERCR-123-A CR-123-A_HOLDER         SHC                 1
+U$9      AVR-PDIVERT                AVR-PDIVERT                AVR-ISP-6               avr-7               1
+U$10     AZ1117EH3.3                AZ1117EH3.3                SOT-223                 Physoon             1
+U$11     LM2940-5                   LM2940-5                   SOT-223                 Physoon             1
+U$12     CKN10160-ND                CKN10160-ND                ZMCHFL3R                SHC                 1
+X1       BU-SMA-V                   BU-SMA-V                   BU-SMA-V                con-coax            1
