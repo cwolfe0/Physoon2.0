@@ -30,8 +30,8 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -4849,7 +4849,7 @@ design rules under a new name.</description>
 <element name="U$12" library="SHC" package="ZMCHFL3R" value="CKN10160-ND" x="38.1" y="76.2"/>
 <element name="LED1" library="led" package="CHIP-LED0603" value="" x="49" y="29" rot="R90"/>
 <element name="R1" library="resistor" package="R0603" value="220" x="49" y="32"/>
-<element name="DIODE" library="Physoon" package="LILYPAD-WEARABLES_LED-1206" value="" x="52.17348125" y="75.005" rot="MR0"/>
+<element name="DIODE" library="Physoon" package="LILYPAD-WEARABLES_LED-1206" value="" x="-4.75488125" y="-4.4577"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5326,7 +5326,8 @@ design rules under a new name.</description>
 <wire x1="96.52" y1="63.5" x2="95.25" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="95.25" y1="64.77" x2="86.36" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="86.36" y1="64.77" x2="76.2" y2="74.93" width="0.4064" layer="16"/>
-<wire x1="76.2" y1="74.93" x2="58.90768125" y2="74.93" width="0.4064" layer="16"/>
+<wire x1="58.90768125" y1="74.93" x2="44.45" y2="74.93" width="0.4064" layer="16"/>
+<wire x1="58.90768125" y1="74.93" x2="76.2" y2="74.93" width="0.4064" layer="16"/>
 <wire x1="41.91" y1="48.26" x2="53.8734" y2="48.26" width="0.4064" layer="16"/>
 <wire x1="53.8734" y1="48.26" x2="63.03518125" y2="57.42178125" width="0.4064" layer="16"/>
 <wire x1="63.03518125" y1="57.42178125" x2="63.00215625" y2="57.42178125" width="0.4064" layer="16"/>
@@ -5339,8 +5340,7 @@ design rules under a new name.</description>
 <wire x1="59.667140625" y1="63.497459375" x2="59.667140625" y2="74.170540625" width="0.4064" layer="16"/>
 <wire x1="59.667140625" y1="74.170540625" x2="58.90768125" y2="74.93" width="0.4064" layer="16"/>
 <contactref element="DIODE" pad="A"/>
-<wire x1="58.90768125" y1="74.93" x2="53.74848125" y2="74.93" width="0.4064" layer="16"/>
-<wire x1="53.74848125" y1="74.93" x2="53.67348125" y2="75.005" width="0.4064" layer="16"/>
+<wire x1="-6.25488125" y1="-4.4577" x2="41.91" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R1" pad="2"/>
@@ -5363,8 +5363,7 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="U$12" pad="3"/>
 <contactref element="DIODE" pad="C"/>
-<wire x1="50.67348125" y1="75.005" x2="44.375" y2="75.005" width="0.4064" layer="16"/>
-<wire x1="44.375" y1="75.005" x2="43.18" y2="76.2" width="0.4064" layer="16"/>
+<wire x1="-3.25488125" y1="-4.4577" x2="43.18" y2="76.2" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

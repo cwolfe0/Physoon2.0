@@ -9,20 +9,6 @@
 <grid distance="1.3" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -30,8 +16,8 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -3496,17 +3482,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="-3" y="9" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-2" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="LILYPAD-WEARABLES_LED-1206">
-<wire x1="0.3" y1="0.7" x2="0.3" y2="0" width="0.2032" layer="21"/>
-<wire x1="0.3" y1="0" x2="0.3" y2="-0.7" width="0.2032" layer="21"/>
-<wire x1="0.3" y1="0" x2="-0.3" y2="0.6" width="0.2032" layer="21"/>
-<wire x1="-0.3" y1="0.6" x2="-0.3" y2="-0.6" width="0.2032" layer="21"/>
-<wire x1="-0.3" y1="-0.6" x2="0.3" y2="0" width="0.2032" layer="21"/>
-<smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
-<text x="-2.17" y="1.67" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.17" y="-2.74" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 </packages>
 </library>
 <library name="led">
@@ -4849,7 +4824,6 @@ design rules under a new name.</description>
 <element name="U$12" library="SHC" package="ZMCHFL3R" value="CKN10160-ND" x="38.1" y="76.2"/>
 <element name="LED1" library="led" package="CHIP-LED0603" value="" x="49" y="29" rot="R90"/>
 <element name="R1" library="resistor" package="R0603" value="220" x="49" y="32"/>
-<element name="DIODE" library="Physoon" package="LILYPAD-WEARABLES_LED-1206" value="" x="52.17348125" y="75.005" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -5320,27 +5294,28 @@ design rules under a new name.</description>
 <wire x1="1.27" y1="54.61" x2="13.49" y2="54.61" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$7">
+<contactref element="U$12" pad="3"/>
 <contactref element="U$8" pad="+"/>
 <contactref element="U$5" pad="+"/>
 <wire x1="96.52" y1="48.26" x2="96.52" y2="63.5" width="0.4064" layer="16"/>
 <wire x1="96.52" y1="63.5" x2="95.25" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="95.25" y1="64.77" x2="86.36" y2="64.77" width="0.4064" layer="16"/>
 <wire x1="86.36" y1="64.77" x2="76.2" y2="74.93" width="0.4064" layer="16"/>
-<wire x1="76.2" y1="74.93" x2="58.90768125" y2="74.93" width="0.4064" layer="16"/>
-<wire x1="41.91" y1="48.26" x2="53.8734" y2="48.26" width="0.4064" layer="16"/>
-<wire x1="53.8734" y1="48.26" x2="63.03518125" y2="57.42178125" width="0.4064" layer="16"/>
-<wire x1="63.03518125" y1="57.42178125" x2="63.00215625" y2="57.42178125" width="0.4064" layer="16"/>
-<wire x1="63.00215625" y1="57.42178125" x2="62.93611875" y2="57.48781875" width="0.4064" layer="16"/>
-<via x="62.93611875" y="57.48781875" extent="1-16" drill="0.6"/>
-<wire x1="62.93611875" y1="57.48781875" x2="62.93611875" y2="60.2615" width="0.4064" layer="1"/>
-<wire x1="62.93611875" y1="60.2615" x2="59.700159375" y2="63.497459375" width="0.4064" layer="1"/>
-<wire x1="59.700159375" y1="63.497459375" x2="59.667140625" y2="63.497459375" width="0.4064" layer="1"/>
-<via x="59.667140625" y="63.497459375" extent="1-16" drill="0.6"/>
-<wire x1="59.667140625" y1="63.497459375" x2="59.667140625" y2="74.170540625" width="0.4064" layer="16"/>
-<wire x1="59.667140625" y1="74.170540625" x2="58.90768125" y2="74.93" width="0.4064" layer="16"/>
-<contactref element="DIODE" pad="A"/>
-<wire x1="58.90768125" y1="74.93" x2="53.74848125" y2="74.93" width="0.4064" layer="16"/>
-<wire x1="53.74848125" y1="74.93" x2="53.67348125" y2="75.005" width="0.4064" layer="16"/>
+<wire x1="44.45" y1="74.93" x2="76.2" y2="74.93" width="0.4064" layer="16"/>
+<wire x1="43.18" y1="76.2" x2="44.45" y2="74.93" width="0.4064" layer="16"/>
+<wire x1="41.91" y1="48.26" x2="41.91" y2="52.07" width="0.4064" layer="1"/>
+<wire x1="41.91" y1="52.07" x2="46.99" y2="57.15" width="0.4064" layer="1"/>
+<via x="46.99" y="57.15" extent="1-16" drill="0.6"/>
+<wire x1="46.99" y1="57.15" x2="57.15" y2="57.15" width="0.4064" layer="16"/>
+<wire x1="57.15" y1="57.15" x2="58.42" y2="58.42" width="0.4064" layer="16"/>
+<wire x1="58.42" y1="58.42" x2="58.42" y2="59.055" width="0.4064" layer="16"/>
+<via x="58.42" y="59.055" extent="1-16" drill="0.6"/>
+<wire x1="58.42" y1="59.055" x2="58.42" y2="62.865" width="0.4064" layer="1"/>
+<via x="58.42" y="62.865" extent="1-16" drill="0.6"/>
+<wire x1="56.13250625" y1="63.4746" x2="55.9054" y2="63.4746" width="0.4064" layer="16"/>
+<wire x1="55.9054" y1="63.4746" x2="43.18" y2="76.2" width="0.4064" layer="16"/>
+<wire x1="58.42" y1="62.865" x2="56.74210625" y2="62.865" width="0.4064" layer="16"/>
+<wire x1="56.74210625" y1="62.865" x2="56.13250625" y2="63.4746" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="R1" pad="2"/>
@@ -5359,12 +5334,6 @@ design rules under a new name.</description>
 <wire x1="18" y1="38.9" x2="18.4" y2="39.3" width="0.4064" layer="16"/>
 <wire x1="18.4" y1="39.3" x2="18.4" y2="42.5" width="0.4064" layer="16"/>
 <wire x1="18.4" y1="42.5" x2="18.39" y2="42.51" width="0.4064" layer="16"/>
-</signal>
-<signal name="N$11">
-<contactref element="U$12" pad="3"/>
-<contactref element="DIODE" pad="C"/>
-<wire x1="50.67348125" y1="75.005" x2="44.375" y2="75.005" width="0.4064" layer="16"/>
-<wire x1="44.375" y1="75.005" x2="43.18" y2="76.2" width="0.4064" layer="16"/>
 </signal>
 </signals>
 </board>
