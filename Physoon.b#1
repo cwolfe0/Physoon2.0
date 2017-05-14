@@ -167,10 +167,10 @@
 <text x="98" y="45" size="1.27" layer="22" rot="MR0">BATT</text>
 <text x="0" y="-0.0635" size="0.0254" layer="21" font="vector">/storage/Chrome/croc.bmp</text>
 <text x="0" y="-0.127" size="0.0508" layer="209" font="vector">/storage/Chrome/croc.bmp</text>
-<hole x="3" y="4" drill="2.4638"/>
-<hole x="97" y="4" drill="2.4638"/>
-<hole x="3" y="77.5" drill="2.4638"/>
-<hole x="50" y="40" drill="2.4638"/>
+<hole x="3" y="4" drill="2.2606"/>
+<hole x="97" y="4" drill="2.2606"/>
+<hole x="3" y="77.5" drill="2.2606"/>
+<hole x="50" y="40" drill="2"/>
 <text x="0" y="-0.127" size="0.0508" layer="20" font="vector">C:/Users/cw0063/Downloads/croc.bmp</text>
 <text x="7.3" y="6" size="1.27" layer="21">GND</text>
 <rectangle x1="71.40575" y1="13.7198125" x2="71.60386875" y2="13.75283125" layer="22" rot="R180"/>
