@@ -11089,8 +11089,8 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <part name="R1" library="resistor" deviceset="R-US_" device="R0603" value="220"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="DIODE" library="Physoon" deviceset="LILYPAD-WEARABLES_LED" device="1206"/>
-<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES"/>
-<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L2012C"/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="50kOhm"/>
+<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="L-US" device="L2012C" value="10uH"/>
 <part name="C11" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
 <part name="L2" library="rc-master-smd" deviceset="FB_" device="0402"/>
 <part name="C15" library="SparkFun" deviceset="CAP" device="0805" value="10uF"/>
@@ -11098,6 +11098,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <part name="GND32" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C12" library="SparkFun" deviceset="CAP" device="0805" value="100nF"/>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="50kOhm"/>
 </parts>
 <sheets>
 <sheet>
@@ -11183,6 +11184,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <instance part="GND32" gate="1" x="109.22" y="63.5" rot="R180"/>
 <instance part="GND33" gate="1" x="132.08" y="73.66" rot="R180"/>
 <instance part="C12" gate="G$1" x="116.84" y="43.18" rot="R270"/>
+<instance part="R3" gate="G$1" x="208.28" y="5.08"/>
 </instances>
 <busses>
 </busses>
@@ -11207,8 +11209,11 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="5"/>
-<wire x1="185.42" y1="-7.62" x2="193.04" y2="-7.62" width="0.1524" layer="91"/>
 <label x="190.5" y="-7.62" size="1.778" layer="95"/>
+<wire x1="185.42" y1="-7.62" x2="215.9" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-7.62" x2="215.9" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="5.08" x2="215.9" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11216,6 +11221,9 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="U$9" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="-2.54" x2="165.1" y2="-2.54" width="0.1524" layer="91"/>
 <label x="165.1" y="-5.08" size="1.778" layer="95"/>
+<wire x1="165.1" y1="-2.54" x2="165.1" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="5.08" x2="203.2" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
