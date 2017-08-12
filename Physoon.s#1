@@ -11103,7 +11103,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-15.24" y="58.42" size="1.778" layer="91">Therm goes from pin 2-&gt;1</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="78.74" y="66.04"/>
@@ -11176,7 +11175,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <instance part="R1" gate="G$1" x="109.22" y="139.7"/>
 <instance part="GND16" gate="1" x="119.38" y="127"/>
 <instance part="DIODE" gate="G$1" x="-33.02" y="-25.4" rot="R90"/>
-<instance part="R2" gate="G$1" x="5.08" y="73.66"/>
+<instance part="R2" gate="G$1" x="2.54" y="73.66"/>
 <instance part="L1" gate="G$1" x="144.78" y="43.18" rot="R90"/>
 <instance part="C11" gate="G$1" x="134.62" y="38.1"/>
 <instance part="L2" gate="G$1" x="134.62" y="63.5"/>
@@ -11275,7 +11274,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="7.62" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -11732,12 +11731,6 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <wire x1="-2.54" y1="76.2" x2="2.54" y2="76.2" width="0.1524" layer="91" style="longdash"/>
 <wire x1="2.54" y1="76.2" x2="2.54" y2="78.74" width="0.1524" layer="91" style="longdash"/>
 <label x="2.54" y="78.74" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="2"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="0" y1="73.66" x2="-2.54" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="73.66" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
-<junction x="-2.54" y="73.66"/>
-<junction x="-2.54" y="76.2"/>
 </segment>
 </net>
 <net name="GC1" class="0">
@@ -11915,6 +11908,12 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pinref part="IC1" gate="G$1" pin="!OC0ASDAPE0"/>
 <wire x1="109.22" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
 <label x="114.3" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$17" class="0">
